@@ -43,6 +43,7 @@
   margin: 0 auto;
   padding: 15px;
   max-width: 50%;
+  z-index: 2;
 }
 
 #es-loreal.es-loreal .es-kv__title {
@@ -53,35 +54,18 @@
   color: inherit;
   font-family: inherit;
   font-weight: inherit;
-  padding: 15px;
+  padding: 16px;
   text-align: center;
   text-transform: uppercase;
-  font-size: 40px;
-  font-weight: 700;
+  font-size: 30px;
+  font-weight: 900;
 }
 
 #es-loreal.es-loreal .es-kv__title span {
-  display: block;
+  display: inline-block;
   background-color: var(--color-main);
   color: var(--color-white);
   padding-inline: 7px;
-}
-
-#es-loreal.es-loreal .es-kv__badge {
-  position: relative;
-  margin: 30px auto 0;
-  max-width: 80%;
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-  -webkit-animation: fade 10s linear infinite;
-  animation: fade 10s linear infinite;
-}
-
-#es-loreal.es-loreal .es-kv__badge:hover {
-  -webkit-transform: translateX(-60px);
-  -ms-transform: translateX(-60px);
-  transform: translateX(-60px);
 }
 
 #es-loreal.es-loreal .es-kv__packshotCtn {
@@ -105,6 +89,7 @@
 #es-loreal.es-loreal .es-kv__img--packshot {
   width: 100%;
   margin-bottom: -3px;
+  vertical-align: bottom;
 }
 
 #es-loreal.es-loreal .es-kv__img {
@@ -1159,6 +1144,7 @@
     top: 3%;
     right: 2%;
     max-width: 220px;
+    padding: 24px;
   }
 
   #es-loreal.es-loreal .es-kv__title {
@@ -1166,15 +1152,14 @@
     top: 32%;
     right: 0;
     width: 365px;
-    text-align: left;
-    font-size: 38px;
+    text-align: right;
+    font-size: 32px;
+    padding: 24px;
   }
 
-  #es-loreal.es-loreal .es-kv__badge {
-    position: absolute;
-    top: 50%;
-    right: -8%;
-    max-width: 230px;
+  #es-loreal.es-loreal .es-kv__img--packshot {
+    max-width: 600px;
+    transform: translateX(9%);
   }
 
   #es-loreal.es-loreal .es-routine {
@@ -1489,14 +1474,22 @@
 }
 
 @media screen and (min-width: 998px) {
-  #es-loreal.es-loreal .es-kv__title {
-    top: 29%;
-    width: 420px;
-    font-size: 48px;
+  #es-loreal.es-loreal .es-kv__logo {
+    max-width: 250px;
+    right: 3%;
+    top: 5%;
   }
 
-  #es-loreal.es-loreal .es-kv__badge {
-    max-width: 280px;
+  #es-loreal.es-loreal .es-kv__title {
+    top: 33%;
+    right: 3%;
+    width: 470px;
+    font-size: 42px;
+  }
+
+  #es-loreal.es-loreal .es-kv__img--packshot {
+    max-width: 800px;
+    transform: translateX(9%);
   }
 
   #es-loreal.es-loreal .es-steps__desc {
