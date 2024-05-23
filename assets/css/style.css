@@ -221,6 +221,10 @@
   font-size: 0.8em;
 }
 
+/* *************** */
+/* RESULTS SECTION */
+/* *************** */
+
 #es-loreal.es-loreal .es-results {
   background: url("../images/es-results-bg.png");
   text-transform: uppercase;
@@ -241,9 +245,11 @@
   font-weight: 900;
   max-width: fit-content;
 }
+
 #es-loreal.es-loreal .es-results__main {
-  padding: 32px  16px;
+  padding: 32px 16px;
 }
+
 #es-loreal.es-loreal .es-results__main--title {
   font-weight: 900;
   font-size: 32px;
@@ -264,9 +270,11 @@
 #es-loreal.es-loreal .es-results__item--img {
   max-width: 24px;
 }
+
 #es-loreal.es-loreal .es-results__item--text {
   font-size: 18px;
 }
+
 #es-loreal.es-loreal .es-results__BA--Ctn {
   position: relative;
   width: 80%;
@@ -274,22 +282,21 @@
   margin: auto;
 }
 
-#es-loreal.es-loreal .es-results__BA--przed {
-  color: var(--color-main);
-  font-size: 16px;
-  position: absolute;
-  transform: translateX(-50%);
-  left: 25%;
-  top: 0;
-}
-
+#es-loreal.es-loreal .es-results__BA--przed,
 #es-loreal.es-loreal .es-results__BA--po {
   color: var(--color-main);
   font-size: 16px;
   position: absolute;
   transform: translateX(-50%);
-  left: 75%;
   top: 0;
+}
+
+#es-loreal.es-loreal .es-results__BA--przed {
+  left: 25%;
+}
+
+#es-loreal.es-loreal .es-results__BA--po {
+  left: 75%;
 }
 
 
@@ -1055,6 +1062,7 @@
     gap: 16px;
     left: 50%;
     transform: translateX(-50%);
+    margin-left: -1%;
   }
 
   #es-loreal.es-loreal .es-routine__bottom--percent {
@@ -1062,9 +1070,20 @@
     margin-bottom: -13px;
   }
 
+  #es-loreal.es-loreal .es-results {
+    background-size: cover;
+    background-position: center;
+    padding: 48px 32px;
+  }
 
+  #es-loreal.es-loreal .es-results__BA--Ctn {
+    margin-left: 2%;
+  }
 
-
+  #es-loreal.es-loreal .es-results__BA--przed,
+  #es-loreal.es-loreal .es-results__BA--po {
+    font-size: 18px;
+  }
 
 
 
@@ -1271,6 +1290,10 @@
     transform: translateX(9%);
   }
 
+  /* *************** */
+  /* ROUTINE SECTION */
+  /* *************** */
+
   #es-loreal.es-loreal .es-routine__title {
     font-size: 36px;
   }
@@ -1308,6 +1331,27 @@
       width: 250px;
     }
   }
+
+  /* *************** */
+  /* RESULTS SECTION */
+  /* *************** */
+
+  #es-loreal.es-loreal .es-results {
+    height: 750px;
+  }
+
+  #es-loreal.es-loreal .es-results__title {
+    font-size: 36px;
+  }
+
+  #es-loreal.es-loreal .es-results__item--text {
+    font-size: 24px;
+  }
+
+  #es-loreal.es-loreal .es-results__BA--Ctn {
+    margin-top: 88px;
+  }
+
 
 
 
