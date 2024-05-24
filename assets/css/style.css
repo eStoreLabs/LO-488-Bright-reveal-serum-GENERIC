@@ -1062,54 +1062,6 @@
   #es-loreal.es-loreal .es-slider__slide--2 {
     position: relative;
   }
-
-
-
-
-  #es-loreal.es-loreal .es-cross {
-    position: relative;
-    padding: 0;
-  }
-
-  #es-loreal.es-loreal .es-cross__bg-desktop {
-    max-width: 100%;
-    display: block;
-    margin: 0 auto;
-  }
-
-  #es-loreal.es-loreal .es-cross__img {
-    display: none;
-  }
-
-  #es-loreal.es-loreal .es-cross__content {
-    max-width: 290px;
-  }
-
-  #es-loreal.es-loreal .es-cross__subtitle {
-    font-size: 12px;
-  }
-
-  #es-loreal.es-loreal .es-cross__desc {
-    font-size: 12px;
-  }
-
-  #es-loreal.es-loreal .es-cross__title {
-    font-size: 22px;
-    position: absolute;
-    top: 5%;
-    left: 20px;
-  }
-
-  #es-loreal.es-loreal .es-cross__left {
-    position: absolute;
-    top: 25%;
-  }
-
-  #es-loreal.es-loreal .es-cross__right {
-    position: absolute;
-    top: 25%;
-    right: 0;
-  }
 }
 
 @media screen and (min-width: 860px) {
