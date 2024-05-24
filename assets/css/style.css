@@ -455,8 +455,6 @@
 
 
 #es-loreal.es-loreal .es-slider {
-  background-color: #fea245;
-  margin: 64px 0 0;
   padding-bottom: 64px;
 }
 
@@ -469,48 +467,37 @@
   font-weight: inherit;
   text-align: center;
   font-size: 28px;
-  font-weight: 700;
-  line-height: 0.1;
-  padding: 60px 16px 0 40px;
+  font-weight: 300;
+  line-height: normal;
+  padding: 32px 16px;
+  text-transform: uppercase;
+}
+
+#es-loreal.es-loreal .es-slider__title span {
+  display: block;
+  color: var(--color-white);
+  font-weight: 900;
+  background: rgb(0, 123, 122);
+  background: linear-gradient(90deg, rgba(0, 123, 122, 1) 0%, rgba(79, 185, 181, 1) 22%, rgba(32, 133, 139, 1) 50%, rgba(80, 185, 179, 1) 72%, rgba(47, 109, 110, 1) 100%);
+  width: max-content;
+  margin: auto;
+  padding: 4px 8px;
 }
 
 #es-loreal.es-loreal .es-slider__wrapper {
-  padding: 56px 16px 0 16px;
+  padding: 32px 16px;
 }
 
 #es-loreal.es-loreal .es-slider__content {
   max-width: 650px;
-  padding: 16px 24px;
+
   background: #fff;
   border-radius: 16px;
   -webkit-box-shadow: 8px 16px 40px rgba(0, 0, 0, 0.1);
   box-shadow: 8px 16px 40px rgba(0, 0, 0, 0.1);
 }
 
-#es-loreal.es-loreal .es-slider__persona {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-flow: column;
-  -moz-box-orient: vertical;
-  -moz-box-direction: normal;
-  -ms-flex-flow: column;
-  flex-flow: column;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -moz-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -moz-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-}
+
 
 #es-loreal.es-loreal .es-slider__img {
   max-width: 100%;
@@ -522,17 +509,7 @@
   position: relative;
 }
 
-#es-loreal.es-loreal .es-slider__podpis {
-  margin: 0;
-  padding: 0;
-  line-height: inherit;
-  color: inherit;
-  font-family: inherit;
-  font-weight: inherit;
-  text-align: center;
-  font-size: 12px;
-  padding-top: 18px;
-}
+
 
 #es-loreal.es-loreal .es-slider__photo {
   margin-bottom: 16px;
@@ -542,27 +519,107 @@
   position: relative;
 }
 
+/* #es-loreal.es-loreal .es-slider__content::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 150px;
+  height: 150px;
+  border: 2px solid red; 
+  background-image: url("../images/beads_bg.png");
+  background-size: cover;
+  z-index: 2;
+} */
+
 #es-loreal.es-loreal .es-slider__slide {
-  padding-left: 32px;
-  padding-top: 15px;
   position: relative;
 }
 
-#es-loreal.es-loreal .es-slider__number {
-  margin: 0;
-  padding: 0;
-  line-height: inherit;
-  color: inherit;
-  font-family: inherit;
-  font-weight: inherit;
+
+#es-loreal.es-loreal .es-slider__slide--2 {
+  padding: 16px;
+}
+
+#es-loreal.es-loreal .es-slider__slide--3,
+#es-loreal.es-loreal .es-slider__slide--4,
+#es-loreal.es-loreal .es-slider__slide--5 {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 8px;
+  font-size: 20px;
+}
+
+#es-loreal.es-loreal .es-slider__slide1__imgCtn {
+  border-radius: 16px 16px 0 0;
+  overflow: hidden;
+}
+
+#es-loreal.es-loreal .es-slider__slide1__imgCtn img {
+  scale: 1.05;
+}
+
+#es-loreal.es-loreal .es-slider__slide1__rightCtn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px 8px;
+  gap: 16px;
+}
+
+#es-loreal.es-loreal .es-slider__slide1__title {
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  text-wrap: balance;
+  font-size: 24px;
+}
+
+#es-loreal.es-loreal .es-slider__slide2__photoCtn {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+#es-loreal.es-loreal .es-slider__slide2__imgCtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  gap: 5px;
+  border-radius: 16px;
+
+  img {
+    object-fit: cover;
+  }
+}
+
+#es-loreal.es-loreal .es-slider__slide2__title {
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  text-wrap: balance;
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+#es-loreal.es-loreal .es-slider__slide2__BA {
   position: absolute;
-  top: 0px;
-  left: 0px;
-  font-size: 145px;
-  font-weight: 700;
-  color: #fea245;
-  opacity: 0.34;
-  line-height: 1;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  top: 3%;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: var(--color-white);
+  font-size: 18px;
+}
+
+#es-loreal.es-loreal .es-slider__slide3--bold {
+  font-weight: 900;
 }
 
 #es-loreal.es-loreal .es-slider .swiper-button-prev:after,
@@ -577,14 +634,14 @@
 
 #es-loreal.es-loreal .es-slider .swiper-button-next,
 #es-loreal.es-loreal .es-slider .swiper-container-rtl .swiper-button-prev {
-  right: 31%;
+  right: 23%;
   top: auto !important;
   bottom: -44px !important;
 }
 
 #es-loreal.es-loreal .es-slider .swiper-button-prev,
 #es-loreal.es-loreal .es-slider .swiper-container-rtl .swiper-button-next {
-  left: 31%;
+  left: 23%;
   top: auto !important;
   bottom: -44px !important;
 }
@@ -1111,56 +1168,45 @@
     }
   }
 
-
-
-
-
-
-
-
   #es-loreal.es-loreal .es-slider {
-    background: url("https://www.ros.net.pl/Portals/0/rich-content/loreal/3600524069797/images/slider.png");
-    background-repeat: no-repeat;
-    background-position: 125%;
-    background-size: contain;
-    background-color: #fea245;
+    width: 90%;
+    margin: auto;
   }
 
   #es-loreal.es-loreal .es-slider__title {
     text-align: left;
-    padding: 60px 16px 0 150px;
+
+    span {
+      margin: unset;
+    }
   }
 
-  #es-loreal.es-loreal .es-slider__content {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
+  #es-loreal.es-loreal .es-slider__slide--1 {
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-    -webkit-flex-flow: row-reverse;
-    -moz-box-orient: horizontal;
-    -moz-box-direction: reverse;
-    -ms-flex-flow: row-reverse;
-    flex-flow: row-reverse;
-    padding: 32px;
   }
 
-  #es-loreal.es-loreal .es-slider__persona {
-    min-width: 136px;
-    margin-left: 32px;
+  #es-loreal.es-loreal .es-slider__slide1__imgCtn {
+    border-radius: 16px 0 0 16px;
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
   }
 
-  #es-loreal.es-loreal .es-slider__imgMoved {
-    position: absolute;
-    top: -40px;
-    right: -20px;
+
+
+
+
+  #es-loreal.es-loreal .es-slider__slide2__photoCtn {
+    flex-direction: row;
+
   }
 
-  #es-loreal.es-loreal .es-slider__job {
-    margin-bottom: 0;
-  }
+
+
+
+
+
 
   #es-loreal.es-loreal .es-slider .swiper-button-next,
   #es-loreal.es-loreal .es-slider .swiper-container-rtl .swiper-button-prev {
