@@ -428,8 +428,9 @@
 
 #es-loreal.es-loreal .es-tab__main--title {
   font-size: 32px;
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
+
 #es-loreal.es-loreal .es-tab__main--title strong {
   display: block;
 }
@@ -440,79 +441,18 @@
   }
 }
 
-#es-loreal.es-loreal .es-formula__content {
-  margin: 0 auto;
-  padding: 10px;
-}
 
-#es-loreal.es-loreal .es-formula__title {
-  margin: 0;
-  padding: 0;
-  line-height: inherit;
-  color: inherit;
-  font-family: inherit;
-  font-weight: inherit;
-  font-size: 28px;
-  font-weight: 700;
-  padding: 0 15px 30px;
-  text-align: center;
-}
 
-#es-loreal.es-loreal .es-formula__text {
-  margin: 0;
-  padding: 0;
-  line-height: inherit;
-  color: inherit;
-  font-family: inherit;
-  font-weight: inherit;
-  padding: 0 15px;
-  font-size: 18px;
-  text-align: center;
-}
 
-#es-loreal.es-loreal .es-formula__wrapper {
-  padding: 25px 15px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  -webkit-justify-content: space-around;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
-}
 
-#es-loreal.es-loreal .es-formula__item {
-  width: 120px;
-  text-align: center;
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-}
 
-#es-loreal.es-loreal .es-formula__item:hover .es-formula__icon {
-  -webkit-transform: translateY(-20px);
-  -ms-transform: translateY(-20px);
-  transform: translateY(-20px);
-}
 
-#es-loreal.es-loreal .es-formula__icon {
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-}
 
-#es-loreal.es-loreal .es-formula__desc {
-  margin: 0;
-  padding: 0;
-  line-height: inherit;
-  color: inherit;
-  font-family: inherit;
-  font-weight: inherit;
-}
+
+
+
+
+
 
 #es-loreal.es-loreal .es-slider {
   background-color: #fea245;
@@ -685,9 +625,10 @@
 }
 
 #es-loreal.es-loreal .es-use {
-  background: url("https://www.ros.net.pl/Portals/0/rich-content/loreal/3600524069797/images/bg-use.png");
+  background: url("../images/bg-serum.png");
   background-repeat: no-repeat;
-  background-position: top left;
+  background-position: bottom center;
+  background-size: 100% 100%;
 }
 
 #es-loreal.es-loreal .es-use__title {
@@ -699,8 +640,9 @@
   font-weight: inherit;
   text-align: center;
   font-size: 28px;
-  font-weight: 700;
-  padding: 90px 16px 40px 40px;
+  font-weight: 300;
+  padding: 32px;
+  text-transform: uppercase;
 }
 
 #es-loreal.es-loreal .es-use__wrapper {
@@ -718,18 +660,23 @@
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   padding: 10px 20px 40px;
-  gap: 45px 20px;
+  gap: 32px 64px;
 }
 
 #es-loreal.es-loreal .es-use__single {
   width: 230px;
   text-align: center;
+  position: relative;
+}
+
+#es-loreal.es-loreal .es-use_photoCtn {
+  overflow: hidden;
+  border-radius: 20px;
+
 }
 
 #es-loreal.es-loreal .es-use__single:hover .es-use__photo {
-  -webkit-transform: translateY(-20px);
-  -ms-transform: translateY(-20px);
-  transform: translateY(-20px);
+  transform: scale(1.1);
 }
 
 #es-loreal.es-loreal .es-use__photo {
@@ -739,6 +686,17 @@
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
+}
+
+#es-loreal.es-loreal .es-use__stepNo {
+  position: absolute;
+  bottom: 38%;
+  right: 0;
+  z-index: 5;
+  background-color: var(--color-main);
+  color: var(--color-white);
+  padding: 4px 8px;
+  font-weight: 900;
 }
 
 #es-loreal.es-loreal .es-use__desc {
@@ -940,9 +898,7 @@
     height: 700px;
   }
 
-  #es-loreal.es-loreal .es-formula__item {
-    width: 165px;
-  }
+
 }
 
 @media screen and (min-width: 768px) {
@@ -1156,61 +1112,11 @@
   }
 
 
-  #es-loreal.es-loreal .es-ingr {
-    position: relative;
-  }
 
-  #es-loreal.es-loreal .es-ingr__img {
-    width: 450px;
-    position: absolute;
-    z-index: 5;
-    right: 0;
-    top: -100px;
-  }
 
-  #es-loreal.es-loreal .es-ingr__wrapper {
-    margin: 0 40px;
-    width: 60%;
-  }
 
-  #es-loreal.es-loreal .es-ingr__title {
-    text-align: left;
-  }
 
-  #es-loreal.es-loreal .es-ingr__item {
-    text-align: left;
-  }
 
-  #es-loreal.es-loreal .es-ingr__headline {
-    -webkit-box-pack: left;
-    -webkit-justify-content: left;
-    -moz-box-pack: left;
-    -ms-flex-pack: left;
-    justify-content: left;
-  }
-
-  #es-loreal.es-loreal .es-ingr__text {
-    width: 85%;
-    text-align: left;
-  }
-
-  #es-loreal.es-loreal .es-formula {
-    position: relative;
-    min-height: 470px;
-  }
-
-  #es-loreal.es-loreal .es-formula__img {
-    position: absolute;
-    top: 0;
-    left: -30%;
-  }
-
-  #es-loreal.es-loreal .es-formula__content {
-    width: 60%;
-    position: absolute;
-    top: 40px;
-    right: 30px;
-  }
 
   #es-loreal.es-loreal .es-slider {
     background: url("https://www.ros.net.pl/Portals/0/rich-content/loreal/3600524069797/images/slider.png");
@@ -1342,6 +1248,7 @@
   #es-loreal.es-loreal .es-tab1--item:nth-of-type(2) {
     top: 38%;
   }
+
   #es-loreal.es-loreal .es-tab1--item:nth-of-type(3) {
     top: 17%;
   }
@@ -1353,11 +1260,11 @@
   #es-loreal.es-loreal .es-tab1--bottom {
     margin-top: 13%;
     margin-left: unset;
-}
+  }
 
   #es-loreal.es-loreal .es-tab2--item:nth-of-type(1) {
     width: 48%;
-        top: 30%;
+    top: 30%;
   }
 
   #es-loreal.es-loreal .es-tab2--item:nth-of-type(1) p {
@@ -1375,18 +1282,7 @@
 
 
 
-  #es-loreal.es-loreal .es-formula {
-    min-height: 470px;
-  }
 
-  #es-loreal.es-loreal .es-formula__img {
-    left: -24%;
-  }
-
-  #es-loreal.es-loreal .es-formula__content {
-    width: 60%;
-    right: 30px;
-  }
 }
 
 @media screen and (min-width: 996px) {
