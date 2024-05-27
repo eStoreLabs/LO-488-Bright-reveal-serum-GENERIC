@@ -766,11 +766,121 @@
   font-weight: 300;
 }
 
+#es-loreal.es-loreal .es-cross {
+  background: var(--color-white);
+  padding: 32px 16px;
+  text-transform: uppercase;
+}
 
+#es-loreal.es-loreal .es-cross__title {
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 28px;
+  text-align: center;
+}
 
+#es-loreal.es-loreal .es-cross__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
 
+#es-loreal.es-loreal .es-cross__img img {
+  object-fit: contain;
+  height: auto;
+  max-height: 300px;
+}
 
+#es-loreal.es-loreal .es-cross__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-align: center;
+  text-wrap: balance;
+}
 
+#es-loreal.es-loreal .es-cross__series-name {
+  font-size: 22px;
+  color: var(--color-white);
+  font-weight: 900;
+  background: rgb(0, 123, 122);
+  background: linear-gradient(90deg, rgba(0, 123, 122, 1) 0%, rgba(79, 185, 181, 1) 22%, rgba(32, 133, 139, 1) 50%, rgba(80, 185, 179, 1) 72%, rgba(47, 109, 110, 1) 100%);
+  width: max-content;
+  text-align: center;
+  padding: 4px 8px;
+}
+
+#es-loreal.es-loreal .es-cross__prod-name {
+  font-weight: 900;
+  font-size: 22px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--color-black);
+}
+
+#es-loreal.es-loreal .es-cross__prod-desc {
+  font-size: 18px;
+}
+
+#es-loreal.es-loreal .es-cross__link {
+  display: block;
+  margin: auto;
+  min-width: 200px;
+  max-width: fit-content;
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--color-main);
+  padding: 8px 16px;
+  color: var(--color-white);
+  font-weight: 900;
+  font-size: 16px;
+  border-radius: 99px;
+  border: 2px solid var(--color-white);
+  transition: all 200ms ease-in-out;
+
+  &:hover {
+    background-color: var(--color-white);
+    color: var(--color-main);
+    border: 2px solid var(--color-main);
+  }
+}
+
+#es-loreal.es-loreal .es-slider2__wrapper {
+  /* padding-inline: 16px; */
+
+}
+
+#es-loreal.es-loreal .swiper2-wrapper {
+  position: relative;
+}
+
+#es-loreal.es-loreal .es-slider2__slide {
+  padding-inline: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+#es-loreal.es-loreal .es-slider2__navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  z-index: 5;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+/* ************* */
+/* FOOTER STYLES */
+/* ************* */
 
 #es-loreal.es-loreal .es-footer {
   background: var(--color-white);
@@ -1062,6 +1172,44 @@
   #es-loreal.es-loreal .es-slider__slide--2 {
     position: relative;
   }
+
+  /* **************** */
+  /*    CROSS SELL    */
+  /*  SLIDER STYLES   */
+  /* **************** */
+  #es-loreal.es-loreal .es-slider2 {
+    max-width: 90%;
+    margin: auto;
+  }
+
+  #es-loreal.es-loreal .es-slider2__slide {
+    padding-inline: 32px;
+  }
+
+  #es-loreal.es-loreal .es-cross__item {
+    flex-direction: row;
+    min-height: 300px;
+  }
+
+  #es-loreal.es-loreal .es-cross__img img {
+    max-height: 270px;
+    max-width: 200px;
+  }
+
+  #es-loreal.es-loreal .es-cross__info {
+    align-items: flex-end;
+    text-align: right;
+    display: block;
+  }
+
+  #es-loreal.es-loreal .es-cross__info p {
+    margin-bottom: 6px;
+  }
+
+  #es-loreal.es-loreal .es-cross__series-name {
+    display: inline-block
+  }
+
 }
 
 @media screen and (min-width: 860px) {
@@ -1277,6 +1425,15 @@
     top: 39%;
   }
 
+  #es-loreal.es-loreal .es-tab1--item::after,
+  #es-loreal.es-loreal .es-tab2--item::after {
+    top: 30px;
+  }
+
+  #es-loreal.es-loreal .es-tab1--item::before {
+    top: 28px;
+  }
+
   #es-loreal.es-loreal .es-steps__desc {
     height: 80px;
   }
@@ -1299,6 +1456,29 @@
     top: 58%;
   }
 
+  /* ****************** */
+  /* CROSS SELL STYLES  */
+  /* ****************** */
+  #es-loreal.es-loreal .es-slider2__slide {
+    gap: 8px;
+  }
+
+  #es-loreal.es-loreal .es-cross__img img {
+    max-width: 250px;
+  }
+
+  #es-loreal.es-loreal .es-cross__info {
+    flex-basis: 70%;
+  }
+
+  #es-loreal.es-loreal .es-cross__series-name,
+  #es-loreal.es-loreal .es-cross__prod-name {
+    font-size: 24px;
+  }
+
+  #es-loreal.es-loreal .es-cross__prod-desc {
+    font-size: 20px;
+  }
 }
 
 

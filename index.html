@@ -211,7 +211,7 @@
           <div class="es-slider__content">
 
 
-            <div class="swiper">
+            <div class="swiper swiper1">
               <div class="swiper-wrapper">
 
                 <div class="swiper-slide">
@@ -316,17 +316,20 @@
               </div>
             </div>
 
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-prev">
+            <div class="swiper-pagination swiper1-pagination"></div>
+
+            <div class="swiper-button-prev swiper1-button-prev">
               <div class="es-slider__arrow">
                 <i class="fa fa-angle-left" aria-hidden="true" style="color:black;"></i>
               </div>
             </div>
-            <div class="swiper-button-next">
+
+            <div class="swiper-button-next swiper1-button-next">
               <div class="es-slider__arrow">
                 <i class="fa fa-angle-right" aria-hidden="true" style="color:black;"></i>
               </div>
             </div>
+
           </div>
         </div>
       </div>
@@ -340,30 +343,86 @@
       <div class="es-slider2">
         <div class="es-slider2__wrapper">
           <div class="es-slider2__content">
-            <div class="swiper2">
-              <div class="swiper2-wrapper">
-                <div class="swiper2-slide">
-                  <div>
-                    <img src="./assets/images/cross-1.png" />
+
+            <div class="swiper swiper2">
+              <div class="swiper-wrapper swiper2-wrapper">
+
+                <div class="swiper-slide es-slider2__slide">
+                  <div class="es-cross__item">
+                    <div class="es-cross__img">
+                      <img src="./assets/images/cross-1.png" />
+                    </div>
+                    <div class="es-cross__info">
+                      <p class="es-cross__series-name">Bright reveal</p>
+                      <p class="es-cross__prod-name">Żel-serum do mycia twarzy</p>
+                      <p class="es-cross__prod-desc">Oczyszcza skórę, redukuje przebawienia & niedoskonałości</p>
+                    </div>
                   </div>
-                  <div>
-                    <p>Bright reveal</p>
-                    <p>Żel-serum do mycia twarzy</p>
-                    <p>Oczyszcza skórę, redukuje przebawienia i niedoskonałości</p>
-                  </div>
+                  <a href="#" target="_blank" class="es-cross__link">Kup teraz</a>
                 </div>
-                <div class="swiper2-pagination"></div>
+
+                <div class="swiper-slide es-slider2__slide">
+                  <div class="es-cross__item">
+                    <div class="es-cross__img">
+                      <img src="./assets/images/cross-2.png" />
+                    </div>
+                    <div class="es-cross__info">
+                      <p class="es-cross__series-name">Bright reveal</p>
+                      <p class="es-cross__prod-name">Niewidoczny UV fluid SPF 50+</p>
+                      <p class="es-cross__prod-desc">Widocznie redukuje przebarwienia &&nbsp;chroni przed powstawaniem nowych</p>
+                    </div>
+                  </div>
+                  <a href="#" target="_blank" class="es-cross__link">Kup teraz</a>
+                </div>
+
+                <div class="swiper-slide es-slider2__slide">
+                  <div class="es-cross__item">
+                    <div class="es-cross__img">
+                      <img src="./assets/images/cross-3.png" />
+                    </div>
+                    <div class="es-cross__info">
+                      <p class="es-cross__series-name">Bright reveal</p>
+                      <p class="es-cross__prod-name">Nawilżający krem z SPF 50</p>
+                      <p class="es-cross__prod-desc">Rozświetla, wyrównuje koloryt &&nbsp;chroni przed promieniowaniem UV</p>
+                    </div>
+                  </div>
+                  <a href="#" target="_blank" class="es-cross__link">Kup teraz</a>
+                </div>
+
+                <div class="swiper-slide es-slider2__slide">
+                  <div class="es-cross__item">
+                    <div class="es-cross__img">
+                      <img src="./assets/images/cross-4.png" />
+                    </div>
+                    <div class="es-cross__info">
+                      <p class="es-cross__series-name">Bright reveal</p>
+                      <p class="es-cross__prod-name">Peeling kwasowy</p>
+                      <p class="es-cross__prod-desc">Szybko redukuje przebarwienia & niedoskonałości</p>
+                    </div>
+                  </div>
+                  <a href="#" target="_blank" class="es-cross__link">Kup teraz</a>
+                </div>
+
+                
+
+
+
+              </div>
+
+              <div class="es-slider2__navigation">
                 <div class="swiper2-button-prev">
                   <div class="es-slider__arrow">
-                    <i class="fa fa-angle-left" aria-hidden="true" style="color:black;"></i>
+                    <i class="fa fa-angle-left" aria-hidden="true" style="color:#00AFB6;"></i>
                   </div>
                 </div>
+
                 <div class="swiper2-button-next">
                   <div class="es-slider__arrow">
-                    <i class="fa fa-angle-right" aria-hidden="true" style="color:black;"></i>
+                    <i class="fa fa-angle-right" aria-hidden="true" style="color:#00AFB6;"></i>
                   </div>
                 </div>
               </div>
+
 
             </div>
           </div>
@@ -402,16 +461,29 @@
   </div>
   <script src="./assets/js/slider.js"></script>
   <script>
-    const swiper = new Swiper('.swiper', {
+    const swiper = new Swiper('.swiper1', {
       loop: true,
       autoHeight: false,
 
       navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev'
+        nextEl: '.swiper1-button-next',
+        prevEl: '.swiper1-button-prev'
       },
       pagination: {
-        el: '.swiper-pagination',
+        el: '.swiper1-pagination',
+        clickable: true
+      }
+    });
+    const swiper2 = new Swiper('.swiper2', {
+      loop: true,
+      autoHeight: false,
+
+      navigation: {
+        nextEl: '.swiper2-button-next',
+        prevEl: '.swiper2-button-prev'
+      },
+      pagination: {
+        el: '.swiper2-pagination',
         clickable: true
       }
     })
