@@ -9,6 +9,7 @@
   font-family: "Lato", sans-serif;
   font-size: 16px;
   font-weight: 300;
+  text-transform: uppercase;
   line-height: 1.2;
   max-width: 998px;
   margin: 0 auto;
@@ -764,12 +765,12 @@
   padding-top: 15px;
   font-size: 16px;
   font-weight: 300;
+  text-transform: none;
 }
 
 #es-loreal.es-loreal .es-cross {
   background: var(--color-white);
   padding: 32px 16px;
-  text-transform: uppercase;
 }
 
 #es-loreal.es-loreal .es-cross__title {
@@ -879,6 +880,52 @@
 }
 
 /* ************* */
+/* VIDEO STYLES  */
+/* ************* */
+
+#es-loreal.es-loreal .es-video {
+  background-color: var(--color-light);
+  padding: 32px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  align-items: center;
+  justify-content: center;
+}
+
+#es-loreal.es-loreal .es-video__text {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+#es-loreal.es-loreal .es-video__img img {
+  transform: rotate(90deg);
+}
+
+#es-loreal.es-loreal .es-video__span {
+  color: var(--color-white);
+  font-weight: 900;
+  background: rgb(0, 123, 122);
+  background: linear-gradient(90deg, rgba(0, 123, 122, 1) 0%, rgba(79, 185, 181, 1) 22%, rgba(32, 133, 139, 1) 50%, rgba(80, 185, 179, 1) 72%, rgba(47, 109, 110, 1) 100%);
+  width: max-content;
+  padding: 4px 8px;
+  margin-top: 8px;
+  font-size: 20px;
+}
+
+#es-loreal.es-loreal .es-video__wrapper {
+  width: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+#es-loreal.es-loreal .es-video__video {
+  width: 100%;
+  aspect-ratio: 16/9;
+  display: block;
+}
+
+/* ************* */
 /* FOOTER STYLES */
 /* ************* */
 
@@ -896,6 +943,7 @@
   padding: 32px 16px;
   text-align: center;
   font-size: 12px;
+  text-transform: none;
 }
 
 
@@ -1208,6 +1256,24 @@
 
   #es-loreal.es-loreal .es-cross__series-name {
     display: inline-block
+  }
+
+  /* ************* */
+  /* VIDEO STYLES  */
+  /* ************* */
+  #es-loreal.es-loreal .es-video {
+    flex-direction: row;
+    padding: 32px 64px;
+    gap: 32px;
+  }
+
+  #es-loreal.es-loreal .es-video__text,
+  #es-loreal.es-loreal .es-video__span {
+    font-size: 22px;
+  }
+
+  #es-loreal.es-loreal .es-video__img img {
+    transform:none;
   }
 
 }
