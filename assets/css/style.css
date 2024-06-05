@@ -1109,22 +1109,26 @@
   #es-loreal.es-loreal .es-routine__bottom {
     background-color: transparent;
     position: absolute;
-    bottom: 50px;
+    bottom: 48px;
     display: flex;
     align-items: flex-end;
     width: 75%;
-    max-width: 510px;
+    max-width: 650px;
     margin: auto;
     text-align: right;
     gap: 16px;
-    left: 50%;
+    left: 46%;
     transform: translateX(-50%);
-    margin-left: -1%;
+    padding: 0;
+  }
+
+  #es-loreal.es-loreal .es-routine__bottom--text {
+    font-size: 30px;
   }
 
   #es-loreal.es-loreal .es-routine__bottom--percent {
-    font-size: 78px;
-    margin-bottom: -13px;
+    font-size: 131px;
+    margin-bottom: -22px;
   }
 
   #es-loreal.es-loreal .es-results {
@@ -1243,8 +1247,18 @@
   }
 
   #es-loreal.es-loreal .es-tab-content--3 {
+    padding: 64px;
+
+    .es-tab__main--title {
+      margin-bottom: 32px;
+    }
+
+    .es-results__list {
+      gap: 8px;
+    }
+
     .es-results__item {
-      width: 400px;
+      width: 450px;
     }
   }
 
@@ -1280,6 +1294,12 @@
 
   #es-loreal.es-loreal .es-slider__slide2__photoCtn {
     flex-direction: row;
+  }
+
+  #es-loreal.es-loreal .es-slider__slide--3,
+  #es-loreal.es-loreal .es-slider__slide--4,
+  #es-loreal.es-loreal .es-slider__slide--5 {
+    gap: 16px;
   }
 
   #es-loreal.es-loreal .es-slider .swiper-button-next,
@@ -1416,6 +1436,8 @@
 
   #es-loreal.es-loreal .es-slider__wrapper {
     position: relative;
+    padding: 32px 78px;
+    text-transform: none;
   }
 
   #es-loreal.es-loreal .es-slider__wrapper::after {
